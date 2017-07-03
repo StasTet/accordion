@@ -1,6 +1,6 @@
 class Accordion {
-    constructor(rootPath, url) {
-        this.root = rootPath;
+    constructor(rootNode, url) {
+        this.root = rootNode;
         this.url = url;
 
         this.items = [];
@@ -20,8 +20,8 @@ class Accordion {
     }
 
     createAccordion(data) {
-        data.forEach(item => {
-            let mainItem = new MainItem(item);
+        data.forEach((item) => {
+            const mainItem = new MainItem(item);
             this.root.append(mainItem.root);
             this.items.push(mainItem);
         });
@@ -30,11 +30,14 @@ class Accordion {
     }
 
     bindItemsEvents() {
-        this.items.forEach(targetItem => targetItem.on('click', () => {
+        this.items.forEach((targetItem) => targetItem.on('click', () => {
             this.items.forEach(item => item !== targetItem && item.close());
+
             if (targetItem.state) {
-                return targetItem.close();
+                targetItem.close();
+                return;
             }
+
             targetItem.open();
         }));
     }

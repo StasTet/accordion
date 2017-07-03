@@ -1,5 +1,6 @@
 class Item {
     constructor(data) {
+        this.data = data;
         this.title = data.title;
 
         this.root = null;

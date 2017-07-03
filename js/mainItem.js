@@ -37,9 +37,10 @@ class MainItem extends Item {
     }
 
     reRender() {
-        if (!this.childrenRoot) {
+        if (!this.data.subitems) {
             return;
         }
+
         if (this.state) {
             this.childrenRoot.slideDown('normal');
         } else {

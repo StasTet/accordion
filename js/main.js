@@ -1,8 +1,7 @@
 $(document).ready(function() {
     
-    const rootTable = $('.accordion');
+    const rootNode = $('.accordion');
     const url = '/src/data.json';
 
-    new Accordion(rootTable, url);
-
+    new Accordion(rootNode, url);
 });
