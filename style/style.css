@@ -1,0 +1,46 @@
+#root {   
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.accordion {   
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.main-item {   
+    border-bottom: 1px solid #ccc;
+    margin: 5px;
+    background-color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.subitems {   
+    list-style-type: none;
+    padding: 0px 10px;
+    margin: 0px;
+    display: none;
+}
+
+.subitems li {   
+    border-bottom: 1px solid #ccc;
+    margin: 5px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.subitems a {   
+    text-decoration: none;
+    font-size: 16px;
+    text-align: left;
+    color: black;
+}
+
+.subitems li:hover a {   
+    color: red;
+}

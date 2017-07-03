@@ -1,0 +1,53 @@
+[
+    {
+        "title": "One main item",
+        "subitems": [
+            {
+                "title": "One item section",
+                "url": "#"
+            },
+            {
+                "title": "One item section",
+                "url": "#"
+            },
+            {
+                "title": "One item section",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "title": "Two main item",
+        "subitems": [
+            {
+                "title": "Two item section",
+                "url": "#"
+            },
+            {
+                "title": "Two item section",
+                "url": "#"
+            },
+            {
+                "title": "Two item section",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "title": "Three main item",
+        "subitems": [
+            {
+                "title": "Three item section",
+                "url": "#"
+            },
+            {
+                "title": "Three item section",
+                "url": "#"
+            },
+            {
+                "title": "Three item section",
+                "url": "#"
+            }
+        ]
+    }
+]
