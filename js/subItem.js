@@ -1,8 +1,7 @@
 class SubItem extends Item {
     constructor(data) {
         super(data);
-        
-        this.title = data.title;
+
         this.url = data.url;
 
         this.initDom();

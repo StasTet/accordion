@@ -2,8 +2,6 @@ class MainItem extends Item {
     constructor(data) {
         super(data);
         
-        this.title = data.title;
-
         this.childrenRoot = null;
 
         this.initChildrenRoot();
