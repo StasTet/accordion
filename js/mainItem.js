@@ -26,7 +26,7 @@ class MainItem extends Item {
     }
 
     bindChildrenEvents() {
-        this.childrenRoot.on('click', e => e.stopPropagation());
+        this.childrenRoot.on('click', event => event.stopPropagation());
     }
 
     open() {
