@@ -1,4 +1,4 @@
-.accordion {   
+.accordion {
     background-color: #eee;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -6,7 +6,7 @@
     width: 200px;
 }
 
-.main-item {   
+.main-item {
     border-bottom: 1px solid #ccc;
     margin: 5px;
     background-color: #fff;
@@ -22,20 +22,20 @@
     display: none;
 }
 
-.subitems li {   
+.subitems li {
     border-bottom: 1px solid #ccc;
     margin: 5px;
     background-color: #fff;
     padding: 10px;
 }
 
-.subitems a {   
+.subitems a {
     text-decoration: none;
     font-size: 16px;
     text-align: left;
     color: black;
 }
 
-.subitems li:hover a {   
+.subitems li:hover a {
     color: red;
 }

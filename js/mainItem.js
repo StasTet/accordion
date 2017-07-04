@@ -6,6 +6,7 @@ class MainItem extends Item {
 
         this.initChildrenRoot();
         this.createChildren(data.subitems);
+        this.bindChildrenEvents();
     }
 
     getTemplates() {
@@ -18,10 +19,14 @@ class MainItem extends Item {
 
     createChildren(data) {
         data.forEach(item => {
-            let subItem = new SubItem(item);
+            const subItem = new SubItem(item);
             this.childrenRoot.append(subItem.root);
             this.root.append(this.childrenRoot);
         });
+    }
+
+    bindChildrenEvents() {
+        this.childrenRoot.on('click', e => e.stopPropagation());
     }
 
     open() {

@@ -8,15 +8,11 @@ class Accordion {
         this.loadData();
     }
 
-    async loadData() {
-        try {
-            let res = await fetch(this.url);
-            res = await res.json();
-            this.createAccordion(res);
-        }
-        catch (e) {
-            console.error(e);
-        }
+    loadData() {
+        fetch(this.url)
+        .then(res => res.json())
+        .then(this.createAccordion.bind(this))
+        .catch(console.error);
     }
 
     createAccordion(data) {
